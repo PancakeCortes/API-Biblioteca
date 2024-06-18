@@ -38,5 +38,8 @@ public class ServicioLibro {
                 .orElseGet(Collections::emptyList);
     }
     
+    public Libro saveBook(Libro libro) {
+        return repositorioLibro.save(libro);
+    }
 
 }
